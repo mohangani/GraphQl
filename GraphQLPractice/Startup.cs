@@ -50,6 +50,7 @@ namespace GraphQLPractice
             services.AddTransient<ISchema,RootSchema>();
 
             services.AddGraphQL(options=>options.EnableMetrics = false).AddSystemTextJson();
+        
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
